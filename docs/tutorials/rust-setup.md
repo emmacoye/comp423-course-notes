@@ -9,8 +9,7 @@ Before you begin this process you should install the following:
 
 * Visual Studio Code
 * Docker Desktop
-* Dev Containers (Visual Studio Code Extension)
-* Rust Analyzer (Visual Studio Code Extension)
+* Dev Containers (Visual Studio Code Extension) --> this will automatically install the extension for Rust Analyzer
 
 You should also have a general understanding of:
 
@@ -107,7 +106,7 @@ To do so press Ctrl+Shift+P (or Cmd+Shift+P on macOS) and type:
 
 ### 3. Create Your Rust Project
 Inside the container, let's verify that Rust is installed and is up-to-date with its version.
-In the terminal write:
+In VS Code, write the following in the terminal:
 
 ``` bash
 rustc --version
@@ -163,8 +162,20 @@ cargo run
 
 This should output ```Hello COMP423```.
 
+### 6. Push Changes and Deploy
+Now that your program runs successfully, let's add and commit the changes to your remote repository. 
+```
+    # Add and commit changes
+    git add .
+    git commit -m "Created Hello COMP423 in Rust"
+
+    # Push changes to remote repo 
+    git push origin main
+```
+Check that the changes have been committed and pushed to your remote repo on GitHub. 
+
 ## Congrats! 
-You've written "Hello COMP423" in Rust.
+You've written ```Hello COMP423``` in Rust.
 
 ## References
 
